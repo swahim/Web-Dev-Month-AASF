@@ -6,30 +6,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./form1.css" rel="styleSheet" >
     <title>Business Form</Form></title>
 </head>
 <body>
-    <main>
-        <h1>Do you have a business idea?</h1>
-        <h3>Are you interested in growing your starup? Fill this form and we will help you connect with people interested in your idea.</h3><br>
-        <hr>
+    <header class="header">
+        <div class="headingBox">
+            <h1>Do you have a business idea?</h1>
+        </div>
+        <div class="line2">
+            <h3>Are you interested in growing your starup? Fill this form and we will help you connect with people interested in your idea.</h3><br>
+        </div>
+    </header>
+    <main class="main">
         <!-- Form start -->
         <form action="" id="MyForm">
-        
-            <label for="NameText"><h4>What's your name?</h4>Its a pleasure to meet you...</label><Br>
-            <input type="text" placeholder="Name" id="NameText"><br><br><br>
-            <label for="EmailInput"><h4>Your Email</h4>Let's keep in touch...</label> <br>
-            <input type="email" placeholder="Email" id="EmailInput"><br><br><br>
+        <div class="entries">
+            <label style="color: rgba(128,0,128,0.7); font-weight: bold;" for="NameText"><h4>What's your name?</h4>Its a pleasure to meet you...</label><br><br>
+            <input class="inputFields" type="text" placeholder="Name" id="NameText"><br><br><br>
+        </div>
+        <div class="entries entries2">
+            <label style="color: rgba(128,0,128,0.7);font-weight: bold;" for="EmailInput"><h4>Your Email</h4>Let's keep in touch...</label> <br>
+            <input class="inputFields" type="email" placeholder="Email" id="EmailInput"><br><br><br>
+        </div>
+        <div class="entries">
             <label for="NumberInput"><h4>How can we reach you?</h4></label> 
-            <input type="tel" placeholder="Number" id="NumberInput"><br><br><br>
-            <label for="HelpBox"><h4>And what we can help you with?</h4>We look forward to having an interesting discussion...</label><br>
-            <input type="text" id="HelpBox" size="50"><br><br><br>
-            <h4>Any attachments?</h4>Attach files you want to share with us...<br><br>
-            <button id="Attach">Attach files</button>
-            <button type="reset" id="Reset">Reset form</button>
-            <button type="submit" id="Submit" value="submit ">Submit form</button>
+            <input class="inputFields" type="tel" placeholder="Number" id="NumberInput"><br><br><br>
+        </div>
+        <div class="entries entries2">
+            <label style="color: rgba(128,0,128,0.7); font-weight: bold; for="HelpBox"><h4>And what we can help you with?</h4>We look forward to having an interesting discussion...</label><br>
+            <input class="inputFields" type="text" id="HelpBox" size="30"><br><br><br>
+        </div>
+        <div class="last">
+            <h4 >Any attachments?</h4>Attach files you want to share with us...<br><br>
+        </div>
+            <button class="button" type="button" id="Attach">Attach files</button>
+            <button class="button" type="reset" id="Reset">Reset form</button>
+            <button class="button" type="submit" id="Submit" value="submit ">Submit form</button>
 
         </form> 
     </main>
+   
 </body>
 </html>
